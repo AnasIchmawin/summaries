@@ -27,6 +27,7 @@
     Unix est organisé en une arborescence de fichiers avec un répertoire racine (`/`).
 
     <img src="UNIX Images/image.png" style="border-radius: 7px;" width="400">
+
     - **Matériel** :
         - Niveau le plus bas, comprenant le processeur, la mémoire, et les périphériques (clavier, écran, etc.).
         - Fonctionne en _langage machine_ propre au processeur.
@@ -80,6 +81,7 @@
     - **Montage** :Les systèmes de fichiers sont accessibles en les **montant** sur des répertoires avec `mount` (`sudo mount <disque ou partition> <point de montage>`), ce qui rend leur contenu visible sans le déplacer ; ils sont ensuite **démontés** avec `umount` (`sudo umount <point de montage>`) pour retirer cet accès.
     
     <img src="UNIX Images/image (1).png" style="border-radius: 7px;" width="400">
+
 ---
 ### 3. Virtualisation
 - **Définition** : Exécuter plusieurs OS sur une même machine.
@@ -504,7 +506,9 @@ if (pid == 0) {
 
 - **Montage de partitions** : Utiliser `fdisk` pour identifier les partitions et `mount` pour les monter dans l’arborescence Linux.
 - **Fichier `/etc/fstab`** : Configure les systèmes de fichiers pour le montage automatique au démarrage.
+
     <img src="UNIX Images/image-5.png" style="border-radius: 7px;" width="400">
+
 - **Commande `fdisk`** : Gère les partitions, mais attention aux pertes de données lors des modifications.
     - **Options** : `fdisk -l` (liste les partitions), `fdisk -p` (affiche la table de partition), `fdisk -n` (crée une nouvelle partition), `fdisk -w` (écrit les modifications).
     - `gparted` : Interface graphique pour gérer les partitions.
@@ -533,6 +537,7 @@ if (pid == 0) {
     - `tar -zxvf nomarchive` : Extrait une archive.
 
     <img src="UNIX Images/image-10.png" style="border-radius: 7px;" width="400">
+
   - `gzip` : Compresse des fichiers.
     - `gzip fichier` : Compresse un fichier.
     - `gzip -d fichier.gz` : Décompresse un fichier.
@@ -756,6 +761,7 @@ Pour attribuer des quotas à un utilisateur spécifique, utilisez la commande `e
     - Le fichier journal de cron est `/var/log/cron`, où les détails d'exécution sont enregistrés.
 
     <img src="UNIX Images/image-17.png" style="border-radius: 7px;" width="400">
+
 - **Sécurité** :
     - Les fichiers `/etc/cron.allow` et `/etc/cron.deny` contrôlent l'accès à cron.
     - Si `cron.allow` existe, seuls les utilisateurs listés peuvent utiliser cron.
@@ -778,13 +784,16 @@ Pour attribuer des quotas à un utilisateur spécifique, utilisez la commande `e
     - Par exemple, `1 5 daily_backup /path/to/backup.sh` exécute `backup.sh` tous les jours avec un délai de 5 minutes après le démarrage.
 
         <img src="UNIX Images/image-18.png" style="border-radius: 7px;" width="400">
+
 - **Journalisation** :
     - Les dates d'exécution sont enregistrées dans `/var/spool/anacron`
 
         <img src="UNIX Images/image-19.png" style="border-radius: 7px;" width="400">
+
     - les journaux détaillés sont également disponibles dans `/var/log/cron`.
 
         <img src="UNIX Images/image-20.png" style="border-radius: 7px;" width="400">
+
 - **Lancement** :
     - `service anacron start` : démarre le service.
     - `service anacron stop` : arrête le service.
@@ -850,6 +859,7 @@ Pour attribuer des quotas à un utilisateur spécifique, utilisez la commande `e
         - **Exemple** : `batch -f script.sh` exécute `script.sh` dès que possible (équivalent à `at -f script.sh now`).
         
         <img src="UNIX Images/image-22.png" style="border-radius: 7px;" width="400">
+
 - **Sorties et Erreurs**
     - Les sorties et erreurs des tâches planifiées avec `at` sont envoyées par mail à l’utilisateur, sauf si elles sont redirigées.
 
@@ -897,6 +907,7 @@ Pour attribuer des quotas à un utilisateur spécifique, utilisez la commande `e
     - La classe d’une adresse IP r´eseau d´etermine la taille de ce dernier. Pour d´eterminer de quelle classe appartient un r´eseau, il faut examiner ses deux premiers bits.
 
         <img src="UNIX Images/image-23.png" style="border-radius: 7px;" width="400">
+
     - **Adresse IP Privée** : Utilisée pour les réseaux locaux, ne sont pas routables sur Internet.
 
         <img src="UNIX Images/image-24.png" style="border-radius: 7px;" width="400">
@@ -904,6 +915,7 @@ Pour attribuer des quotas à un utilisateur spécifique, utilisez la commande `e
     - **Sous Réseaux** : Permettent de diviser un réseau en plusieurs sous-réseaux, en utilisant un masque de sous-réseau.
 
         <img src="UNIX Images/image-25.png" style="border-radius: 7px;" width="400">
+
 - **Suite TCP/IP** :
 
     - Protocoles fondamentaux : `IP`, `ICMP`, `UDP`, `TCP`.
