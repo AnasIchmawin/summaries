@@ -32,7 +32,7 @@
 - **JDK (Java Development Kit)** : Contient les outils pour compiler et exécuter le code Java.
 - **Java SE (Java Standard Edition)** : Plateforme de base pour développer des applications Java, incluant les bibliothèques standard, le JDK et le JRE.Anciennement appelée J2SE (Java 2 Platform, Standard Edition).
 
-    <img src="JEE Images/image-5.png" style="border-radius: 7px;" style="border-radius: 7px;" width="300">
+    <img src="Images/image-5.png" style="border-radius: 7px;" style="border-radius: 7px;" width="300">
 
 ---
 
@@ -61,7 +61,7 @@
 - **Couche Métier** : Règles métier, logique de traitement, opérations spécifiques.
 - **Couche Web** : Présentation et interaction utilisateur (frontend).
 
-<img src="JEE Images/image-6.png" style="border-radius: 7px;" width="200">
+<img src="Images/image-6.png" style="border-radius: 7px;" width="200">
 
 ---
 
@@ -91,7 +91,7 @@
   - **Jakarta EE 9 (2020)** : Suppression des technologies obsolètes pour moderniser la plateforme.
   - **Jakarta EE 10 (2022)** : Introduction de mises à jour et d'améliorations pour répondre aux besoins actuels.
 
-        <img src="JEE Images/image-7.png" style="border-radius: 7px;" width="400">
+        <img src="Images/image-7.png" style="border-radius: 7px;" width="400">
 
 ---
 
@@ -112,7 +112,7 @@
     - **Entités beans** : Gestion de la persistance des données.
     - **EJB (Enterprise JavaBeans)** : Encapsulation de la logique métier, gestion des transactions et de la sécurité.
 
-<img src="JEE Images/image-8.png" style="border-radius: 7px;" width="600">
+<img src="Images/image-8.png" style="border-radius: 7px;" width="600">
 
 ---
 
@@ -185,7 +185,7 @@
       - Modules `JAR` pour les composants EJB.
     - **Empaquetage** : Le tout est regroupé dans un fichier `EAR`.
 
-    <img src="JEE Images/image-9.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-9.png" style="border-radius: 7px;" width="400">
 
 ---
 
@@ -226,7 +226,7 @@
 - **Réponse Client** :
   - La page HTML générée est renvoyée au client dans une réponse HTTP.
 
-<img src="JEE Images/image-10.png" style="border-radius: 7px;" width="700">
+<img src="Images/image-10.png" style="border-radius: 7px;" width="700">
 
 ---
 
@@ -453,7 +453,7 @@ protocole HTTP…
     - Permet de libérer les ressources (fermer les connexions à la base de données, arrêter les threads, etc.).
     - Syntaxe : `public void destroy(){...}`.
 
-    <img src="JEE Images/image-11.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-11.png" style="border-radius: 7px;" width="400">
 
 ---
 
@@ -558,7 +558,7 @@ protocole HTTP…
     6. **Traitement des requêtes** : Appel de `_jspService()` pour chaque requête.
     7. **Destruction** : Appel de `jspDestroy()` pour libérer les ressources.
 
-    <img src="JEE Images/image-12.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-12.png" style="border-radius: 7px;" width="400">
 
 ---
 

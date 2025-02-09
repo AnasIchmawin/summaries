@@ -26,7 +26,7 @@
 - **Structure générale** :
     Unix est organisé en une arborescence de fichiers avec un répertoire racine (`/`).
 
-    <img src="UNIX Images/image.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image.png" style="border-radius: 7px;" width="400">
 
     - **Matériel** :
         - Niveau le plus bas, comprenant le processeur, la mémoire, et les périphériques (clavier, écran, etc.).
@@ -80,7 +80,7 @@
     - **Inodes** : Structures pour les informations sur les fichiers (user, groupe, taille, droits d’accès nbr de liens, … ).
     - **Montage** :Les systèmes de fichiers sont accessibles en les **montant** sur des répertoires avec `mount` (`sudo mount <disque ou partition> <point de montage>`), ce qui rend leur contenu visible sans le déplacer ; ils sont ensuite **démontés** avec `umount` (`sudo umount <point de montage>`) pour retirer cet accès.
     
-    <img src="UNIX Images/image (1).png" style="border-radius: 7px;" width="400">
+    <img src="Images/image (1).png" style="border-radius: 7px;" width="400">
 
 ---
 ### 3. Virtualisation
@@ -496,10 +496,10 @@ if (pid == 0) {
 - **`sleep()`** : Suspend l’exécution pour une durée spécifiée.
 
 
-<img src="UNIX Images/image-1.png" style="border-radius: 7px;" width="400">
-<img src="UNIX Images/image-2.png" style="border-radius: 7px;" width="400">
-<img src="UNIX Images/image-3.png" style="border-radius: 7px;" width="400">
-<img src="UNIX Images/image-4.png" style="border-radius: 7px;" width="400">
+<img src="Images/image-1.png" style="border-radius: 7px;" width="400">
+<img src="Images/image-2.png" style="border-radius: 7px;" width="400">
+<img src="Images/image-3.png" style="border-radius: 7px;" width="400">
+<img src="Images/image-4.png" style="border-radius: 7px;" width="400">
 
 ## Chapitre 8
 ### **Montage et Maintenance des Partitions**
@@ -507,7 +507,7 @@ if (pid == 0) {
 - **Montage de partitions** : Utiliser `fdisk` pour identifier les partitions et `mount` pour les monter dans l’arborescence Linux.
 - **Fichier `/etc/fstab`** : Configure les systèmes de fichiers pour le montage automatique au démarrage.
 
-    <img src="UNIX Images/image-5.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-5.png" style="border-radius: 7px;" width="400">
 
 - **Commande `fdisk`** : Gère les partitions, mais attention aux pertes de données lors des modifications.
     - **Options** : `fdisk -l` (liste les partitions), `fdisk -p` (affiche la table de partition), `fdisk -n` (crée une nouvelle partition), `fdisk -w` (écrit les modifications).
@@ -521,22 +521,22 @@ if (pid == 0) {
   - **Niveaux 1-9** : Sauvegardes des modifications depuis la dernière sauvegarde du niveau inférieur.
   - `/etc/dumpdates` : Fichier de suivi des sauvegardes.
 
-    <img src="UNIX Images/image-6.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-6.png" style="border-radius: 7px;" width="400">
     
-    <img src="UNIX Images/image-7.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-7.png" style="border-radius: 7px;" width="400">
 
   - RESTORE
 
-    <img src="UNIX Images/image-8.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-8.png" style="border-radius: 7px;" width="400">
 
-    <img src="UNIX Images/image-9.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-9.png" style="border-radius: 7px;" width="400">
 
 - **Commandes `tar` et `gzip`** :
   - `tar` : Utilitaire pour créer, afficher et extraire des archives.
     - `tar -zcvf nomarchive fichiers` : Crée une archive compressée.
     - `tar -zxvf nomarchive` : Extrait une archive.
 
-    <img src="UNIX Images/image-10.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-10.png" style="border-radius: 7px;" width="400">
 
   - `gzip` : Compresse des fichiers.
     - `gzip fichier` : Compresse un fichier.
@@ -594,7 +594,7 @@ if (pid == 0) {
 
   - Modifier `/etc/fstab` pour activer les quotas au demarrage (`usrquota` pour utilisateurs, `grpquota` pour groupes).
 
-    <img src="UNIX Images/image-11.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-11.png" style="border-radius: 7px;" width="400">
 
   - `mount -o remount /` : remonte le système de fichiers avec les quotas activés.  
   - Utiliser `quotacheck` pour créer les fichiers `aquota.user` et `aquota.group`.
@@ -604,7 +604,7 @@ if (pid == 0) {
     - `-v` : Mode verbeux (affiche les étapes).
     - `-m` : Pour ne pas essayer de faire un remount en mode read only avant le check.
 
-    <img src="UNIX Images/image-12.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-12.png" style="border-radius: 7px;" width="400">
 
   - Activer les quotas avec `quotaon` et les désactiver avec `quotaoff` lorsque les fichiers n'existent pas au démarrage.
     - **Options** : `-u` (utilisateurs), `-g` (groupes), `-a` (tous).
@@ -622,7 +622,7 @@ Pour attribuer des quotas à un utilisateur spécifique, utilisez la commande `e
     - Cette commande ouvre l'éditeur `vi` ou l'éditeur défini par `$EDITOR` pour modifier les quotas de l'utilisateur `user1`. 
     - Vous verrez une structure similaire :
 
-        <img src="UNIX Images/image-13.png" style="border-radius: 7px;" width="400">
+        <img src="Images/image-13.png" style="border-radius: 7px;" width="400">
 
         - **Blocks** : Quantité d'espace disque utilisé en Ko.
         - **Soft limit** : Limite douce, après laquelle des avertissements sont envoyés.
@@ -723,11 +723,11 @@ Pour attribuer des quotas à un utilisateur spécifique, utilisez la commande `e
         - `crontab -u user` : Gère le crontab d'un utilisateur spécifique. 
     - Exemple de fichier crontab (/etc/crontab) :
 
-        <img src="UNIX Images/image-15.png" style="border-radius: 7px;" width="400">
+        <img src="Images/image-15.png" style="border-radius: 7px;" width="400">
 
-        <img src="UNIX Images/image-14.png" style="border-radius: 7px;" width="400">
+        <img src="Images/image-14.png" style="border-radius: 7px;" width="400">
 
-        <img src="UNIX Images/image-16.png" style="border-radius: 7px;" width="400">
+        <img src="Images/image-16.png" style="border-radius: 7px;" width="400">
         
     - **Variables** :
         - **LOGNAME** : Nom de l'utilisateur (root par défaut).
@@ -760,7 +760,7 @@ Pour attribuer des quotas à un utilisateur spécifique, utilisez la commande `e
 - **Journalisation** :
     - Le fichier journal de cron est `/var/log/cron`, où les détails d'exécution sont enregistrés.
 
-    <img src="UNIX Images/image-17.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-17.png" style="border-radius: 7px;" width="400">
 
 - **Sécurité** :
     - Les fichiers `/etc/cron.allow` et `/etc/cron.deny` contrôlent l'accès à cron.
@@ -783,16 +783,16 @@ Pour attribuer des quotas à un utilisateur spécifique, utilisez la commande `e
         - **Commande** : commande permet de spécifier le script ou la tâche à exécuter.
     - Par exemple, `1 5 daily_backup /path/to/backup.sh` exécute `backup.sh` tous les jours avec un délai de 5 minutes après le démarrage.
 
-        <img src="UNIX Images/image-18.png" style="border-radius: 7px;" width="400">
+        <img src="Images/image-18.png" style="border-radius: 7px;" width="400">
 
 - **Journalisation** :
     - Les dates d'exécution sont enregistrées dans `/var/spool/anacron`
 
-        <img src="UNIX Images/image-19.png" style="border-radius: 7px;" width="400">
+        <img src="Images/image-19.png" style="border-radius: 7px;" width="400">
 
     - les journaux détaillés sont également disponibles dans `/var/log/cron`.
 
-        <img src="UNIX Images/image-20.png" style="border-radius: 7px;" width="400">
+        <img src="Images/image-20.png" style="border-radius: 7px;" width="400">
 
 - **Lancement** :
     - `service anacron start` : démarre le service.
@@ -843,7 +843,7 @@ Pour attribuer des quotas à un utilisateur spécifique, utilisez la commande `e
 - **Contrôle des Travaux**
     - `atq` : Affiche les tâches planifiées encore en attente.
 
-        <img src="UNIX Images/image-21.png" style="border-radius: 7px;" width="400">
+        <img src="Images/image-21.png" style="border-radius: 7px;" width="400">
 
         - **/var/spool/at** : Contient les fichiers de tâches planifiées.
     - `atrm` : Supprime les tâches planifiées par leur identifiant (equivalent à `at -d`).
@@ -858,7 +858,7 @@ Pour attribuer des quotas à un utilisateur spécifique, utilisez la commande `e
     - `batch` : Exécute les tâches dès que la charge de la machine le permet, sans nécessiter une heure précise, ou dès qu’une heure spécifiée est atteinte.
         - **Exemple** : `batch -f script.sh` exécute `script.sh` dès que possible (équivalent à `at -f script.sh now`).
         
-        <img src="UNIX Images/image-22.png" style="border-radius: 7px;" width="400">
+        <img src="Images/image-22.png" style="border-radius: 7px;" width="400">
 
 - **Sorties et Erreurs**
     - Les sorties et erreurs des tâches planifiées avec `at` sont envoyées par mail à l’utilisateur, sauf si elles sont redirigées.
@@ -906,15 +906,15 @@ Pour attribuer des quotas à un utilisateur spécifique, utilisez la commande `e
 
     - La classe d’une adresse IP r´eseau d´etermine la taille de ce dernier. Pour d´eterminer de quelle classe appartient un r´eseau, il faut examiner ses deux premiers bits.
 
-        <img src="UNIX Images/image-23.png" style="border-radius: 7px;" width="400">
+        <img src="Images/image-23.png" style="border-radius: 7px;" width="400">
 
     - **Adresse IP Privée** : Utilisée pour les réseaux locaux, ne sont pas routables sur Internet.
 
-        <img src="UNIX Images/image-24.png" style="border-radius: 7px;" width="400">
+        <img src="Images/image-24.png" style="border-radius: 7px;" width="400">
 
     - **Sous Réseaux** : Permettent de diviser un réseau en plusieurs sous-réseaux, en utilisant un masque de sous-réseau.
 
-        <img src="UNIX Images/image-25.png" style="border-radius: 7px;" width="400">
+        <img src="Images/image-25.png" style="border-radius: 7px;" width="400">
 
 - **Suite TCP/IP** :
 
@@ -923,7 +923,7 @@ Pour attribuer des quotas à un utilisateur spécifique, utilisez la commande `e
         - Exemple : `80` pour HTTP, `22` pour SSH, `25` pour SMTP.
         - `/etc/services` : Fichier de correspondance entre les ports et les services.
 
-        <img src="UNIX Images/image-26.png" style="border-radius: 7px;" width="400">
+        <img src="Images/image-26.png" style="border-radius: 7px;" width="400">
 
     - **Protocole IP** : Permet de router les paquets entre les réseaux.
     - **Protocole ICMP** : Permet de gérer les erreurs et les messages de contrôle.
@@ -1104,7 +1104,7 @@ DHCP (Dynamic Host Configuration Protocol) est un protocole permettant la config
     - **Allocation Automatique** : Le serveur DHCP attribue une adresse IP permanente à un client.
     - **Allocation Dynamique** : Le serveur attribue une adresse IP pour une durée limitée, optimisant l'utilisation des adresses.
 
-    <img src="UNIX Images/image-27.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-27.png" style="border-radius: 7px;" width="400">
 
 ### Types et Format des Messages DHCP
 
@@ -1118,7 +1118,7 @@ DHCP (Dynamic Host Configuration Protocol) est un protocole permettant la config
 
 - **Format du Message DHCP** :
 
-    <img src="UNIX Images/image-28.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-28.png" style="border-radius: 7px;" width="400">
 
     - **Code d'Opération** : Type de message DHCP (1 pour requête, 2 pour réponse).
     - **Identificateur de Transaction** : Identifiant unique pour chaque transaction.
@@ -1133,12 +1133,12 @@ DHCP (Dynamic Host Configuration Protocol) est un protocole permettant la config
 - **Détection d'un Serveur DHCP** :
     - Le client envoie un message DHCPDISCOVER pour trouver les serveurs DHCP disponibles.
 
-    <img src="UNIX Images/image-29.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-29.png" style="border-radius: 7px;" width="400">
 
 - **Offre de Configuration** :
     - Le serveur répond avec un message DHCPOFFER, proposant une configuration IP au client.
 
-    <img src="UNIX Images/image-30.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-30.png" style="border-radius: 7px;" width="400">
 
 ### Le Relais DHCP
 
@@ -1146,4 +1146,4 @@ DHCP (Dynamic Host Configuration Protocol) est un protocole permettant la config
     - Utilisé lorsque les clients et le serveur DHCP ne sont pas sur le même sous-réseau.
     - Le relais DHCP permet de transmettre les messages DHCP entre sous-réseaux, évitant la nécessité d'avoir un serveur DHCP sur chaque sous-réseau.
 
-    <img src="UNIX Images/image-31.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-31.png" style="border-radius: 7px;" width="400">

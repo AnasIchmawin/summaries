@@ -226,7 +226,7 @@ composants ou de packages].
 - Ce sont également des indicateurs de l'avancement du projet et de la validation des fonctionnalités via des tests.
 ---
 ### 5. Exemple:
-<img src="UML Images/image-5.png" style="border-radius: 7px;" width="600">
+<img src="Images/image-5.png" style="border-radius: 7px;" width="600">
 
 ---
 
@@ -235,7 +235,7 @@ composants ou de packages].
 - **Acteurs principaux** : Ceux qui initient les échanges dans un cas d’utilisation (par exemple, un client passant une commande).
 - **Acteurs secondaires** : Ceux qui assistent le processus ou effectuent des tâches en soutien (souvent d'autres systèmes).
 
-<img src="UML Images/image-6.png" style="border-radius: 7px;" width="400">
+<img src="Images/image-6.png" style="border-radius: 7px;" width="400">
 
 ---
 
@@ -248,11 +248,11 @@ composants ou de packages].
     Types de généralisation :
     - Entre les cas d’utilisation :
         
-        <img src="UML Images/image-7.png" style="border-radius: 7px;" width="400">
+        <img src="Images/image-7.png" style="border-radius: 7px;" width="400">
 
     - Entre les acteurs :
 
-        <img src="UML Images/image-8.png" style="border-radius: 7px;" width="400">
+        <img src="Images/image-8.png" style="border-radius: 7px;" width="400">
 ---
 
 ### 8. Relation d’inclusion
@@ -261,7 +261,7 @@ composants ou de packages].
 - Implique le déclenchement automatique de B sans intervention 
 externe.
 
-<img src="UML Images/image-9.png" style="border-radius: 7px;" width="400">
+<img src="Images/image-9.png" style="border-radius: 7px;" width="400">
 
 le cas d’utilisation « Passer commande » implique que le client est déjà connecté. 
 
@@ -272,7 +272,7 @@ le cas d’utilisation « Passer commande » implique que le client est déjà c
 - le cas B étend le cas A (B est une partie optionnelle de A).
 - B est un « cas spécial » de A qui ajoute une(des) fonctionnalité(s) optionnelle(s). 
 
-<img src="UML Images/image-10.png" style="border-radius: 7px;" width="400">
+<img src="Images/image-10.png" style="border-radius: 7px;" width="400">
 
 Le cas d’utilisation «imprimer ticket de reçu» est cas optionnel 
 qui étende le cas d’utilisation «effectuer une transaction»
@@ -283,7 +283,7 @@ qui étende le cas d’utilisation «effectuer une transaction»
 
 - Les relations d'inclusion et d'extension permettent de réutiliser les cas d'utilisation dans différents contextes, rendant le développement plus modulaire et évitant la duplication de code.
 
-<img src="UML Images/image-11.png" style="border-radius: 7px;" width="400">
+<img src="Images/image-11.png" style="border-radius: 7px;" width="400">
 
 ---
 
@@ -291,7 +291,7 @@ qui étende le cas d’utilisation «effectuer une transaction»
 
 - Les cas d'utilisation complexes peuvent être **décomposés** en cas plus simples via les relations d'inclusion et d'extension, facilitant la gestion et la compréhension des fonctionnalités.
 
-    <img src="UML Images/image-12.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-12.png" style="border-radius: 7px;" width="400">
 ---
 
 ### 12. Conseils pour rester lisible
@@ -317,7 +317,7 @@ qui étende le cas d’utilisation «effectuer une transaction»
 - **Exemple concret de cas d’utilisation** :
     > Un client peut effectuer un virement bancaire. Le transfert peut être un virement sur place ou par Internet. Le client doit être identifié (en fournissant son code d’accès) pour effectuer un virement, mais si le montant dépasse 500DH, la vérification du solde de son compte est réalisée
     >
-    ><img src="UML Images/image-13.png" style="border-radius: 7px;" width="400">
+    ><img src="Images/image-13.png" style="border-radius: 7px;" width="400">
 ---
 
 ### 16. Description textuelle
@@ -430,7 +430,7 @@ qui étende le cas d’utilisation «effectuer une transaction»
     - **Nom unique** de la classe, **attributs** et **opérations** listés dans des compartiments du rectangle UML.
 - Exemples d'attributs :
 
-    <image src="UML Images/image-14.png" style="border-radius: 7px;" width="400">
+    <image src="Images/image-14.png" style="border-radius: 7px;" width="400">
 
 ---
 
@@ -453,7 +453,7 @@ qui étende le cas d’utilisation «effectuer une transaction»
     - **Attribut de classe** : commun à toutes les instances de la classe, noté en italique ou souligné.
         - Syntaxe : <u>`Visibilité attribut: type[= valeur initiale]`</u>
 
-        <image src="UML Images/image-15.png" style="border-radius: 7px;" width="400">
+        <image src="Images/image-15.png" style="border-radius: 7px;" width="400">
 
 ---
 
@@ -465,11 +465,11 @@ qui étende le cas d’utilisation «effectuer une transaction»
     - **Constructeurs** : méthodes de création d’instances.
 - Syntaxe : `Visibilité Nom_opération([arguments:type[=valeur initiale]]):type de résultat`
 
-    <image src="UML Images/image-16.png" style="border-radius: 7px;" width="400">
+    <image src="Images/image-16.png" style="border-radius: 7px;" width="400">
 
 - **note** : un symbole permettant de décrire des contraintes, des commentaires ou des algorithmes associés à un élément du modèle. 
 
-    <img src="UML Images/image-17.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-17.png" style="border-radius: 7px;" width="400">
 
 ---
 
@@ -482,52 +482,52 @@ qui étende le cas d’utilisation «effectuer une transaction»
             - **Nom** : Indique la nature de la relation.
             - **Sens de lecture** : Direction dans laquelle la relation est interprétée.
 
-                <image src="UML Images/image-18.png" style="border-radius: 7px;" width="400">
+                <image src="Images/image-18.png" style="border-radius: 7px;" width="400">
             - **Degré** (arité) : Nombre de classes impliquées dans l'association (unaire, binaire, ternaire, n-aire).
 
-                <img src="UML Images/image-20.png" style="border-radius: 7px;" width="400">
+                <img src="Images/image-20.png" style="border-radius: 7px;" width="400">
             - **Multiplicité** : Contraintes sur le nombre d'instances associées (min..max).
 
-                <img src="UML Images/image-21.png" style="border-radius: 7px;" width="400">
+                <img src="Images/image-21.png" style="border-radius: 7px;" width="400">
             - **Rôle** : Décrit la fonction d'une classe dans l'association (utile pour relations réflexives).
 
-                <img src="UML Images/image-22.png" style="border-radius: 7px;" width="400">
+                <img src="Images/image-22.png" style="border-radius: 7px;" width="400">
             - **Navigabilité** : Définit la direction d'accès entre classes (par défaut, bidirectionnel).
 
-                <img src="UML Images/image-23.png" style="border-radius: 7px;" width="400">
+                <img src="Images/image-23.png" style="border-radius: 7px;" width="400">
             - **Réflexivité** : Une classe est associée à elle-même.
 
-                <img src="UML Images/image-24.png" style="border-radius: 7px;" width="400">
+                <img src="Images/image-24.png" style="border-radius: 7px;" width="400">
             - **Classe-association** : Permet d'ajouter des attributs spécifiques à l'association.
                 
-                <img src="UML Images/image-19.png" style="border-radius: 7px;" width="400">
+                <img src="Images/image-19.png" style="border-radius: 7px;" width="400">
             - **Qualification** : Restreint la multiplicité selon une donnée précise.
 
-                > <img src="UML Images/image-25.png" style="border-radius: 7px;" width="400">
+                > <img src="Images/image-25.png" style="border-radius: 7px;" width="400">
 
                 > Supposons que Grâce à l’attribut NomFichier de la classe Fichier, une instance de la classe Répertoire peut accéder à une instance de la classe Fichier
                 >
-                > <img src="UML Images/image-26.png" style="border-radius: 7px;" width="400">
+                > <img src="Images/image-26.png" style="border-radius: 7px;" width="400">
                 >
                 > En connaissant le nom de fichier, il y’a un seul fichier
         - Sous-types :
             - **Agrégation** : Relation "partie-tout" où les composants sont séparables (losange vide).
 
-                > <img src="UML Images/image-27.png" style="border-radius: 7px;" width="400">
+                > <img src="Images/image-27.png" style="border-radius: 7px;" width="400">
                 >
                 >La suppression d’une équipe n’implique pas la suppression des personnes qui la composent.
             - **Composition** : Relation forte où les composants dépendent de l'existence de l'agrégat (losange plein).
 
                 >la destruction de l’agrégat (ou conteneur) implique automatiquement la destruction de tous les composants liés.
                 >
-                > <img src="UML Images/image-28.png" style="border-radius: 7px;" width="400">
+                > <img src="Images/image-28.png" style="border-radius: 7px;" width="400">
     2. **Généralisation/Spécialisation** :
         - **Définition** : Relation hiérarchique entre une classe générale (super-classe) et une ou plusieurs classes spécialisées (sous-classes).
         - Éléments clés :
             - **Généralisation** : Met en facteur les caractéristiques communes de plusieurs classes dans une super-classe.
             - **Spécialisation** : Ajoute des détails spécifiques aux sous-classes.
 
-                <img src="UML Images/image-29.png" style="border-radius: 7px;" width="400">
+                <img src="Images/image-29.png" style="border-radius: 7px;" width="400">
             - **Notation** : Représentée par un triangle pointant vers la super-classe.
         - Caractéristiques des sous-classes :
             - Héritent des attributs et méthodes de la super-classe.
@@ -539,10 +539,10 @@ qui étende le cas d’utilisation «effectuer une transaction»
         - **Polymorphisme** :
             - Les sous-classes partagent des opérations de même nom, mais avec des comportements spécifiques.
                 
-            <img src="UML Images/image-30.png" style="border-radius: 7px;" width="400">
+            <img src="Images/image-30.png" style="border-radius: 7px;" width="400">
         - **Héritage multiple** : Une classe peut hériter de plusieurs super-classes.
 
-            <img src="UML Images/image-31.png" style="border-radius: 7px;" width="400">
+            <img src="Images/image-31.png" style="border-radius: 7px;" width="400">
     3. **Dépendance** :
         - **Définition** : Relation unidirectionnelle où un élément source dépend d'un élément cible.
         - Caractéristiques :
@@ -550,7 +550,7 @@ qui étende le cas d’utilisation «effectuer une transaction»
             - Représentée par un trait discontinu avec une flèche pointant vers l’élément cible.
             - Exemple : si le cours change, l’emploi du temps change.
 
-                <img src="UML Images/image-32.png" style="border-radius: 7px;" width="400">
+                <img src="Images/image-32.png" style="border-radius: 7px;" width="400">
 
 ---
 
@@ -565,7 +565,7 @@ qui étende le cas d’utilisation «effectuer une transaction»
         - Le nom d'une classe abstraite est écrit en **italique** ou accompagné du stéréotype `<<abstract>>`.
     - Exemple UML :
 
-        <img src="UML Images/image-33.png" style="border-radius: 7px;" width="400">
+        <img src="Images/image-33.png" style="border-radius: 7px;" width="400">
 
 - **Interface** : Une interface est une classe spéciale où toutes les méthodes sont abstraites.
     - Elle représente une liste d'opérations ou un contrat que les classes implémentant cette interface doivent respecter.
@@ -576,7 +576,7 @@ qui étende le cas d’utilisation «effectuer une transaction»
         - En UML, une interface est notée avec le stéréotype <<interface>> ou un symbole spécifique.
     - Exemple UML :
 
-        <img src="UML Images/image-34.png" style="border-radius: 7px;" width="400">
+        <img src="Images/image-34.png" style="border-radius: 7px;" width="400">
 
 ---
 
@@ -600,28 +600,28 @@ qui étende le cas d’utilisation «effectuer une transaction»
         - Les objets sont ordonnés selon un critère précis.
         - Exemple : 
 
-            <img src="UML Images/image-35.png" style="border-radius: 7px;" width="200">
+            <img src="Images/image-35.png" style="border-radius: 7px;" width="200">
     - Contrainte `{sous-ensemble}`
         - Indique qu’une collection est incluse dans une autre.
         - Nécessite au moins deux relations.
         - Exemple : 
 
-            <img src="UML Images/image-36.png" style="border-radius: 7px;" width="400">
+            <img src="Images/image-36.png" style="border-radius: 7px;" width="400">
     - Contrainte `{xor}`
         - Indique que parmi un groupe d’associations, une seule est valide à la fois.
         - Exemple :
 
-            <img src="UML Images/image-37.png" style="border-radius: 7px;" width="300">
+            <img src="Images/image-37.png" style="border-radius: 7px;" width="300">
     - Contrainte `{addOnly}`
         - Autorise uniquement l’ajout de nouveaux objets, sans possibilité de suppression ou de mise à jour.
         - Exemple : 
 
-            <img src="UML Images/image-38.png" style="border-radius: 7px;" width="300">
+            <img src="Images/image-38.png" style="border-radius: 7px;" width="300">
     - Contrainte `{frozen}`
         - Interdit l’ajout, la suppression ou la mise à jour des liens d’un objet une fois initialisé.
         - Exemple : La contrainte {frozen} est utilisée pour indiquer qu'une fois qu'un lien de parenté est défini entre un parent et un enfant, ce lien est figé et ne peut pas être modifié.
 
-            <img src="UML Images/image-39.png" style="border-radius: 7px;" width="300"> 
+            <img src="Images/image-39.png" style="border-radius: 7px;" width="300"> 
 3. Utilité des contraintes en UML
     - Modélisation précise : Elles garantissent la cohérence des relations entre classes.
     - Conception robuste : Elles permettent de réduire les erreurs lors de l’implémentation en spécifiant les comportements autorisés.
@@ -672,7 +672,7 @@ Exemple de notation :
 - Objet : `nomObjet:NomClasse`
 - Lien entre objets : Instance d’association (nom de l’association souligné si elle est nommée).
 
-    <img src="UML Images/image-40.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-40.png" style="border-radius: 7px;" width="400">
 
 ---
 
@@ -697,7 +697,7 @@ Exemple de notation :
     - **Diagrammes d’état** : décrivent le comportement d’un objet selon ses états.
     - **Diagrammes d’activités** : décrivent les flux de traitement ou workflows.
 
-    <img src="UML Images/image-41.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-41.png" style="border-radius: 7px;" width="400">
 
 ### 3. Diagramme de séquences
 
@@ -709,36 +709,36 @@ Exemple de notation :
     - **Messages** : Interactions entre objets représentées par des flèches.
         - La forme d’un message est : `[condition] message (paramètres)`.
 
-    <img src="UML Images/image-42.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-42.png" style="border-radius: 7px;" width="400">
 
 ### 4. Messages dans un diagramme de séquences
 
 - **Messages simples** : Communication standard sans critère spécifique.
 
-    <img src="UML Images/image-43.png" style="border-radius: 7px;" width="300">
+    <img src="Images/image-43.png" style="border-radius: 7px;" width="300">
 - **Messages minutés (Timeout)** : Bloque l’expéditeur pendant un délai.
     - **Exemple** : La porte d’un ascenseur s’ouvre pendant un certain délai avant d’être refermée.
 
-    <img src="UML Images/image-44.png" style="border-radius: 7px;" width="300">
+    <img src="Images/image-44.png" style="border-radius: 7px;" width="300">
 - **Messages synchrones** : Bloque l’expéditeur jusqu'à réponse du récepteur.
 
 - **Messages asynchrones** : Non bloquants, le récepteur traite le message à son rythme.
 
-    <image src="UML Images/image-45.png" style="border-radius: 7px;" width="300">
+    <image src="Images/image-45.png" style="border-radius: 7px;" width="300">
 - **Messages récursifs (réflexive)** : Messages qu’un objet s’envoie à lui-même.
 
-    <img src="UML Images/image-46.png" style="border-radius: 7px;" width="300">
+    <img src="Images/image-46.png" style="border-radius: 7px;" width="300">
 
 - **Message perdu (Lost Message)** : Un message dont l’émetteur est connu, mais le récepteur est hors de portée du diagramme.
 - **Message trouvé (Found Message)** : Un message dont le récepteur est connu, mais l’émetteur est inconnu ou non représenté dans le diagramme.
 
-    <img src="UML Images/image-47.png" style="border-radius: 7px;" width="300">
+    <img src="Images/image-47.png" style="border-radius: 7px;" width="300">
 ### 5. Création et suppression de participants
 
 - **Création d’un objet** : Indiquée par une flèche pointant vers le sommet de la ligne de vie.
 - **Destruction d’un objet** : Représentée par une croix en bas de la ligne de vie.
 
-<img src="UML Images/image-48.png" style="border-radius: 7px;" width="400">
+<img src="Images/image-48.png" style="border-radius: 7px;" width="400">
 
 ### 6. Fragments dans un diagramme de séquences
 **Concepts généraux** :
@@ -749,7 +749,7 @@ Exemple de notation :
     - `opt` : option.
     - Autres : `ref`, `par`, etc.
 
-    <img src="UML Images/image-49.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-49.png" style="border-radius: 7px;" width="400">
 
 **Types de fragments et leur utilisation** :
 - Fragment `loop` :
@@ -757,17 +757,17 @@ Exemple de notation :
     - La séquence est exécutée tant qu’une condition de garde est vraie.
     - Exemple : `loop[2, 5, code=true]` signifie que la séquence est exécutée deux fois obligatoires, et jusqu’à trois fois supplémentaires si `code=true`.
 
-    <img src="UML Images/image-50.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-50.png" style="border-radius: 7px;" width="400">
 - Fragment `opt` :
     - Utilisé pour une interaction conditionnelle unique.
     - La séquence n’est exécutée que si la condition de garde est satisfaite.
 
-    <img src="UML Images/image-51.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-51.png" style="border-radius: 7px;" width="400">
 - Fragment `alt` :
     - Représente des alternatives conditionnelles multiples.
     - Chaque condition est associée à un opérande. Si aucune condition n’est satisfaite, l’opérande `else` est exécuté (si défini).
 
-    <img src="UML Images/image-52.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-52.png" style="border-radius: 7px;" width="400">
 - Différences entre `alt` et `opt` :
     - `opt` : Comporte un seul opérande, exécuté uniquement si la condition est vraie.
     - `alt` : Comporte plusieurs opérandes, où la première condition vraie détermine l’exécution.
@@ -775,12 +775,12 @@ Exemple de notation :
     - Fait référence à un autre diagramme de séquences.
     - Permet de simplifier les diagrammes en évitant les duplications d’informations.
 
-    <img src="UML Images/image-53.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-53.png" style="border-radius: 7px;" width="400">
 - Fragment `par` :
     - Utilisé pour représenter des traitements concurrents.
     - Les sous-fragments s’exécutent simultanément, séparés par des pointillés.
 
-    <img src="UML Images/image-54.png" style="border-radius: 7px;" style="border-radius: 7px;" width="400">
+    <img src="Images/image-54.png" style="border-radius: 7px;" style="border-radius: 7px;" width="400">
 
 **Autres fragments** :
 - `ignore` : Fragments facultatifs.
@@ -795,7 +795,7 @@ Exemple de notation :
 
 - Les diagrammes de séquences sont souvent combinés avec les diagrammes de classes pour valider la cohérence des interactions et des structures statiques.
 
-    <img src="UML Images/image-55.png" style="border-radius: 7px;" style="border-radius: 7px;" width="400">
+    <img src="Images/image-55.png" style="border-radius: 7px;" style="border-radius: 7px;" width="400">
 
 
 ---
@@ -819,32 +819,32 @@ Exemple de notation :
 - Indique qu’une communication peut exister entre ces participants.
 - Peut inclure une multiplicité pour montrer combien de connexions existent.
 
-<img src="UML Images/image-70.png" style="border-radius: 7px;" width="400">
+<img src="Images/image-70.png" style="border-radius: 7px;" width="400">
 
 **Message** :
 - Représenté par une flèche pleine :
     - Flèche simple pour un message asynchrone.
     - Flèche avec une tête fermée pour un message synchrone.
 
-    <img src="UML Images/image-71.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-71.png" style="border-radius: 7px;" width="400">
 - Peut inclure :
     - **Ordre** (numérotation).
 
-        <img src="UML Images/image-72.png" style="border-radius: 7px;" width="300">
+        <img src="Images/image-72.png" style="border-radius: 7px;" width="300">
     - **Condition de franchissement** (ex. : **[condition]**).
 
-        <img src="UML Images/image-73.png" style="border-radius: 7px;" width="300">
+        <img src="Images/image-73.png" style="border-radius: 7px;" width="300">
     - **Boucle** (**[for each item]**, **[while condition]**).
     - **Valeur de retour** (optionnelle, représentée par une flèche en pointillés).
     - **Messages récursifs** (un participant s’envoie un message à lui-même).
 
-        <img src="UML Images/image-74.png" style="border-radius: 7px;" width="300">
+        <img src="Images/image-74.png" style="border-radius: 7px;" width="300">
 ### 3. Spécificités des messages :
 - **Message conditionné** : Ajout de conditions au message.
 - **Messages simultanés** : Identifiés par un même numéro de séquence avec des lettres suffixées (ex. : 1a, 1b).
 - **Message de retour** : Utilise une flèche pointillée pour indiquer une réponse ou un retour.
 
-    <img src="UML Images/image-75.png" style="border-radius: 7px;" width="400">
+    <img src="Images/image-75.png" style="border-radius: 7px;" width="400">
 - **Boucles** : Indiquées par des conditions spécifiques ou des annotations.
 
 ### 4. Différences entre diagrammes de séquence et de communication :
@@ -856,7 +856,7 @@ Exemple de notation :
 | **Gestion des itérations**     | Utilise des fragments           | Utilise une numérotation des messages |
 | **Complexité de construction** | Plus détaillé, demande plus d’efforts | Plus simple à construire et adapter   |
 
-<img src="UML Images/image-76.png" style="border-radius: 7px;" width="500">
+<img src="Images/image-76.png" style="border-radius: 7px;" width="500">
 
 ### 5. Cas d'utilisation :
 - **Diagramme de séquence** :
@@ -877,7 +877,7 @@ Exemple de notation :
     - Décrire les **actions et décisions**.
     - Modéliser des **boucles** et des **flux parallèles**.
 
-    <img src="UML Images/image-56.png" style="border-radius: 7px;" style="border-radius: 7px;" width="400">
+    <img src="Images/image-56.png" style="border-radius: 7px;" style="border-radius: 7px;" width="400">
 
 ---
 
@@ -909,39 +909,39 @@ Exemple de notation :
 
 1. **Nœud de départ** : Indique le début d’un flux (cercle noir rempli).
 
-    <img src="UML Images/image-57.png" style="border-radius: 7px;" width="80">
+    <img src="Images/image-57.png" style="border-radius: 7px;" width="80">
 2. **Nœud de fin** : Marque la fin d’un processus.
 
-    <img src="UML Images/image-58.png" style="border-radius: 7px;" width="80">
+    <img src="Images/image-58.png" style="border-radius: 7px;" width="80">
 3. **Action** : Représente une tâche simple ou opération (exemple : "Faire commande").
 
-    <img src="UML Images/image-59.png" style="border-radius: 7px;" width="110">
+    <img src="Images/image-59.png" style="border-radius: 7px;" width="110">
 4. **Transition** : Montre le passage d'une action à une autre.
 
-    <img src="UML Images/image-60.png" style="border-radius: 7px;" width="250">
+    <img src="Images/image-60.png" style="border-radius: 7px;" width="250">
 5. **Activité** : Modélise un ensemble d’actions ou un processus complexe.
 
-    <img src="UML Images/image-61.png" style="border-radius: 7px;" width="250">
+    <img src="Images/image-61.png" style="border-radius: 7px;" width="250">
 6. **Décision** : Noeud conditionnel où le flux peut diverger (losange).
 
-    <img src="UML Images/image-62.png" style="border-radius: 7px;" width="250">
+    <img src="Images/image-62.png" style="border-radius: 7px;" width="250">
 7. **Convergence** : Réunit plusieurs chemins d'exécution.
 
-    <img src="UML Images/image-63.png" style="border-radius: 7px;" width="250">
+    <img src="Images/image-63.png" style="border-radius: 7px;" width="250">
 8. **Itération** : Représente des boucles sur des actions ou activités.
 
-    <img src="UML Images/image-64.png" style="border-radius: 7px;" width="250">
+    <img src="Images/image-64.png" style="border-radius: 7px;" width="250">
 9. **Synchronisation (Fork et Join)** :
     - **Fork** : Division d’un flux en sous-flux parallèles.
     - **Join** : Synchronisation des flux parallèles en un flux unique.
 
-    <img src="UML Images/image-65.png" style="border-radius: 7px;" width="250">
+    <img src="Images/image-65.png" style="border-radius: 7px;" width="250">
 10. **Fin locale** : Termine une branche sans affecter le processus global.
 
-    <img src="UML Images/image-66.png" style="border-radius: 7px;" width="250">
+    <img src="Images/image-66.png" style="border-radius: 7px;" width="250">
 11. **Object Node** : Représente les objets produits ou consommés par une action.
 
-    <img src="UML Images/image-67.png" style="border-radius: 7px;" width="250">
+    <img src="Images/image-67.png" style="border-radius: 7px;" width="250">
 
 ---
 
@@ -950,7 +950,7 @@ Exemple de notation :
 - **Signal reçu** : Déclenche un traitement dans le processus.
 - **Signal envoyé** : Émet un résultat ou message externe.
 
-<img src="UML Images/image-68.png" style="border-radius: 7px;" width="350">
+<img src="Images/image-68.png" style="border-radius: 7px;" width="350">
 
 ---
 
@@ -959,4 +959,4 @@ Exemple de notation :
 - Permettent de **délimiter les responsabilités** dans un processus.
 - Chaque activité est attribuée à une **ressource** (acteur ou système externe) dans un couloir.
 
-<img src="UML Images/image-69.png" style="border-radius: 7px;" width="350">
+<img src="Images/image-69.png" style="border-radius: 7px;" width="350">
