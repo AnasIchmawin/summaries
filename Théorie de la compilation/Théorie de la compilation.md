@@ -57,6 +57,7 @@
             <img src="Images/image-1.png" style="border-radius: 7px;" width="250">
 
     - **Exemple :** Le compilateur GCC traduit un programme C (affichant "hello world!") en code assembleur.
+    - **Exemple de langages compilés :** C, C++, Rust, Pascal, Fortran, Cobol.
 
 - **Interprétation**
     - **Définition :** Un interpréteur lit et exécute le code source instruction par instruction, sans générer de fichier en langage machine.
@@ -69,6 +70,7 @@
         
     - **Exemples :** Les interpréteurs de Java et Python qui produisent et exécutent du bytecode.
     - **Remarque :** Certains interpréteurs, comme ceux de JavaScript avant V8, n’utilisaient pas de bytecode.
+    - **Exemple de langages interprétés :** Python, Ruby, JavaScript, Java (avec la JVM), Lisp, Perl, Prolog, PHP.
 
 - **Traduction**
     - **Définition :** Un traducteur convertit le code source d’un langage vers un autre, sans forcément produire du code machine.
